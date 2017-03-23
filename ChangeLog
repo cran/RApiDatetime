@@ -1,0 +1,58 @@
+2017-03-23  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.1
+
+	* DESCRIPTION (OS_type): At least for now, unix only
+
+2017-03-22  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/datetime.R: Add examples to all functions
+	* man/rapistrptime.Rd: Ditto
+
+	* src/datetime.c (asPOSIXlt): Bugfix
+
+	* tests/test.R: Also call rapiAsPOSIXlt()
+
+	* .travis.yml: Add Travis CI support
+	* .codecov.yml: Add CodeCov support
+
+2017-03-19  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/init.c: Expanded registration to six functions
+	* inst/include/RApiDatetime.h: Expanded export to six functions
+
+	* src/Rstrptime.h: Updated relative to R sources
+
+	* R/datetime.R (rapiAsPOSIXlt, rapiFormatPOSIXlt, rapiPOSIXlt2D)
+	(rapiD2POSIXlt): Additional entry points, expanded documentation
+	* man/rapistrptime: Expanded documentation
+
+	* tests/test.R: Expanded as well
+
+2017-03-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/datetime.c: Updated relative to R sources (needs another pass)
+	* src/datetime.h: Updated relative to R sources
+
+	* src/Rstrptime.h: Commented-out unused wide-char code to quieten compiler
+
+	* R/datetime.R (rapistrptime, rapiAsPOSIXct): Added short help page
+	entries
+	* man/rapistrptime: Added
+	* man/rapiAsPOSIXct.Rd: Added
+
+2015-04-06  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/include/RApiDatetime.h: Added to exported headers
+	* src/datetime.h: Added
+	* src/attrib.c: Added to set (class) attributes
+	* tests/test.R: Minimal tests
+
+2015-04-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Very first steps
+	* NAMESPACE: Ditto
+	* man/RApiDatetime-package.Rd: Ditto
+	* src/Rstrptime.h: Ditto
+	* src/datetime.c: Ditto
+	* src/init.c: Ditto
