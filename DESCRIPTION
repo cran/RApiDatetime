@@ -1,8 +1,8 @@
 Package: RApiDatetime
 Type: Package
 Title: R API Datetime
-Version: 0.0.2
-Date: 2017-03-25
+Version: 0.0.3
+Date: 2017-04-02
 Author: Dirk Eddelbuettel and R Core (original code)
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: Access to the C-level R date and datetime code is provided for
@@ -13,6 +13,6 @@ Description: Access to the C-level R date and datetime code is provided for
 License: GPL (>= 2)
 RoxygenNote: 6.0.1
 NeedsCompilation: yes
-Packaged: 2017-03-25 17:22:39.462753 UTC; edd
+Packaged: 2017-04-02 12:27:18.294946 UTC; edd
 Repository: CRAN
-Date/Publication: 2017-03-25 21:51:30 UTC
+Date/Publication: 2017-04-02 15:27:02 UTC

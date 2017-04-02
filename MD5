@@ -1,10 +1,10 @@
-2b550326f64b58151550187cef896a19 *ChangeLog
-0f93024054b66bbbfebf32993a71c951 *DESCRIPTION
-d8d88b1f4eaf7180fefb7944300e2c72 *NAMESPACE
+3ab1d77ebba434614c4ec2e51923ee59 *ChangeLog
+676c5b1f7034f829938e670a5d9c8105 *DESCRIPTION
+0f2951260f4f9a23a572af4a2acfb903 *NAMESPACE
 cfd85c1998bc3ea03d6514f23428520e *R/datetime.R
 6709d5028760c4304b81ca2e828b1710 *README.md
-dcd72911cb6fc60d38796e52208fd2ca *inst/NEWS.Rd
-51f66de01d8a2c6d8e855efbe0c06dca *inst/include/RApiDatetime.h
+ba9a6e04b73dc33fc9351c60266296f7 *inst/NEWS.Rd
+8c2daafac15e3b9e75ebc9fd368503f6 *inst/include/RApiDatetime.h
 6d3f7750bcb9d747368c1a34ed4b0a52 *man/RApiDatetime-package.Rd
 b45f045a1d70db2e172e737b5f55db1a *man/rapistrptime.Rd
 cedc6669a210ae5c0e2bd77bbcdd57ef *src/Makevars
