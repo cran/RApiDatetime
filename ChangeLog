@@ -1,3 +1,24 @@
+2018-10-21  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.4
+
+	* README.md: Added dependencies badge
+
+2018-10-20  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/datetime.c: Synchronized with R 3.5.1
+	* src/attrib.c: Idem
+
+2018-10-20  Joshua Ulrich  <josh.m.ulrich@gmail.com>
+
+	* src/datetime.c: Added POSIXct2D based on two R Core functions
+	* R/asDatePOSIXct.R: R wrapper for POSIXct2D
+	* man/asDatePOSIXct: Documentation for asDatePOSIXct
+
+2018-09-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .travis.yml: Minor Travis CI update
+
 2017-04-02  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Date, Version): Release 0.0.3
