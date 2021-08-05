@@ -1,3 +1,48 @@
+2021-08-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.5
+
+	* README.md: Update/correct one URL
+
+2021-08-03  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/datetime.c: Synchronised with r-devel version
+	* src/Rstrptime.h: Idem
+
+	* src/Makevars.win (PKG_CFLAGS): Added
+
+	* .github/workflows/ci.yaml (jobs): Re-enable coverage
+
+2021-07-31  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Date, Version): Roll minor version
+
+	* src/datetime.c: Remove R_tzname[2] also removed upstream
+
+2021-04-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (URL, BugRreports): Added to DESCRIPTION file
+
+2020-12-30  Dirk Eddelbuettel  <edd@debian.org>
+
+        * .github/workflows/ci.yaml: Add CI runner using r-ci
+	* README.md: Add new CI badge
+
+2020-05-22  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Add a 'last commit' badge
+
+2019-07-15  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/datetime.R: Use registered in .Call(), skip package="..."
+	* R/asDatePOSIXct.R: Idem
+
+	* src/datetime.c: Updates, define HAVE_TM_GMTOFF even if NA
+
+2018-10-24  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/datetime.c (validate_tm): Add one missing '#nocov end'
+
 2018-10-21  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.0.4
