@@ -1,11 +1,11 @@
-52fa1be5bf2e8ccc86d8f46a7914857d *ChangeLog
-1c5f17cd9174cc9bfc9ec5dfb660c2df *DESCRIPTION
+b15ebe1a9fdd15704bd58323530ae517 *ChangeLog
+8981002adcc09021a503add63a48f4f0 *DESCRIPTION
 0e9b216e010729e2b64d6603bdfc1b7b *NAMESPACE
 e1232fd233b1ac15cd06f8f6ba7717b0 *R/asDatePOSIXct.R
 af187ce2032ed5c81cdcc3254ca6ab88 *R/datetime.R
 e14d943e3f9878490d8d8b3ff481414c *README.md
 314cee712fb09b8346fe804ccb77076d *cleanup
-6a51ae2bb21e79f8caae24cc389760b9 *inst/NEWS.Rd
+d006a0d1dff2d534534f07587ef6f8d2 *inst/NEWS.Rd
 8c2daafac15e3b9e75ebc9fd368503f6 *inst/include/RApiDatetime.h
 6d3f7750bcb9d747368c1a34ed4b0a52 *man/RApiDatetime-package.Rd
 c3dcf1ea974e17893826e7244511b1ef *man/asDatePOSIXct.Rd
@@ -14,7 +14,8 @@ cedc6669a210ae5c0e2bd77bbcdd57ef *src/Makevars
 e1df8ead0a343274901e7412705c700e *src/Makevars.win
 0e5308c5379867e4f18cd82ee0c91d9c *src/Rstrptime.h
 c130ddc985c68effe13bd19b1bf11205 *src/attrib.c
-0bf65d28f0980484bf1106e3c0dddb6f *src/datetime.c
+9a83ac25c418ba001a1c4c207f5a0a4a *src/datetime.c
 a6ff12c3e549828b578f72eaeffdcfee *src/datetime.h
 bf0be08c950148f029f4c65875f0f1a3 *src/init.c
 43cfd81886de5e229d93a2b8c2ab59fa *tests/test.R
+18bc2208b1a500041337148809839283 *tests/version.R

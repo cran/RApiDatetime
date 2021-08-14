@@ -3,6 +3,14 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/rapidatetime/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/rapidatetime/issues/#1}{##1}}
 
+\section{Changes in RApiDatetime version 0.0.6 (2021-08-13)}{
+  \itemize{
+    \item Correctly account for SunOS to have it avoid \code{GMTOFF} use
+    \item A new test file was added to ensure \sQuote{NEWS.Rd} is always
+    at the current release version.
+  }
+}
+
 \section{Changes in RApiDatetime version 0.0.5 (2021-08-05)}{
   \itemize{
     \item Add a few \code{#nocov} tags
