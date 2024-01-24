@@ -1,3 +1,11 @@
+2024-01-23  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.9
+
+	* DESCRIPTION (OS_type): Reset package to Unix-only
+
+	* man/RApiDatetime-package.Rd: Avoid nags on empty entries
+
 2023-01-14  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.0.8
@@ -6,6 +14,8 @@
 	* src/datetime.h: Minor sync from R sources
 
 	* DESCRIPTION: Minor edits
+
+	* README.md: Edit codecov badge URL
 
 2022-10-30  Dirk Eddelbuettel  <edd@debian.org>
 

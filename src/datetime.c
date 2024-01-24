@@ -111,11 +111,7 @@ known OS with 64-bit time_t and complete tables is Linux.
 
 typedef struct tm stm;
 #define R_tzname tzname
-# if defined(__CYGWIN__) || defined(_WIN32)
-extern __declspec(dllimport) char *tzname[2];
-# else
 extern char *tzname[2];
-# endif
 
 #endif
 
@@ -727,7 +723,7 @@ SEXP asPOSIXlt(SEXP argsxp, SEXP tzarg) // other args?
     if (isgmt) {
 	PROTECT(tzone = mkString(tz));				/* #nocov */
     } else {
-	PROTECT(tzone = allocVector(STRSXP, 3));
+        PROTECT(tzone = allocVector(STRSXP, 3));
 	SET_STRING_ELT(tzone, 0, mkChar(tz));
 	SET_STRING_ELT(tzone, 1, mkChar(R_tzname[0]));
 	SET_STRING_ELT(tzone, 2, mkChar(R_tzname[1]));
