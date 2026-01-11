@@ -37,7 +37,8 @@
 # include <config.h>
 #endif
 
-#include <Rmath.h> // for imin2()
+#include <Rmath.h> 	// for imin2()
+#include <Rversion.h>	// for R_Version
 
 // to get tm_zone, tm_gmtoff defined in glibc.
 // some other header, e.g. math.h, might define the macro.
@@ -111,7 +112,11 @@ known OS with 64-bit time_t and complete tables is Linux.
 
 typedef struct tm stm;
 #define R_tzname tzname
+# if defined(__CYGWIN__) || defined(_WIN32)
+extern __declspec(dllimport) char *tzname[2];
+# else
 extern char *tzname[2];
+# endif
 
 #endif
 
@@ -723,7 +728,7 @@ SEXP asPOSIXlt(SEXP argsxp, SEXP tzarg) // other args?
     if (isgmt) {
 	PROTECT(tzone = mkString(tz));				/* #nocov */
     } else {
-        PROTECT(tzone = allocVector(STRSXP, 3));
+	PROTECT(tzone = allocVector(STRSXP, 3));
 	SET_STRING_ELT(tzone, 0, mkChar(tz));
 	SET_STRING_ELT(tzone, 1, mkChar(R_tzname[0]));
 	SET_STRING_ELT(tzone, 2, mkChar(R_tzname[1]));
@@ -1225,8 +1230,12 @@ SEXP Rstrptime(SEXP xarg, SEXP sformatarg, SEXP stzarg) {
     PROTECT(klass = allocVector(STRSXP, 2));
     SET_STRING_ELT(klass, 0, mkChar("POSIXlt"));
     SET_STRING_ELT(klass, 1, mkChar("POSIXt"));
+#if R_VERSION >= R_Version(4,5,0)
+    Rf_setAttrib(ans, R_ClassSymbol, klass); /* we can now use Rf_setAttrib -- DEdd */
+#else
     //classgets(ans, klass);  /* DEdd: this bombs, so use installAttrib instead */
     installAttrib(ans, R_ClassSymbol, klass); /* fix by DE */
+#endif
     if(settz) reset_tz(oldtz);
     if(isString(tzone)) setAttrib(ans, install("tzone"), tzone);
 

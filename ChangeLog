@@ -1,8 +1,36 @@
+2026-01-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .github/workflows/ci.yaml: Switch to actions/checkout@v6
+
+2026-01-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/datetime.c (Rstrptime): Use Rf_setAttrib with R 4.5.0 or later
+	* src/attrib.c (installAttrib): Minor update relative to R source,
+	also compile only under older R to avoid nags on SET_ATTRIB and ATTRIB
+
+2025-02-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .github/workflows/ci.yaml (jobs): Use r-ci action with bootstrap
+
+2024-09-06  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Authors@R): Added
+
+2024-05-20  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Use tinyverse.netlify.app for dependency badge
+
+2024-01-24  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .github/workflows/ci.yaml (jobs): Use actions/checkout@v5, switch
+	to eddelbuettel/github-actions/r-ci-setup@master
+
 2024-01-23  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.0.9
 
-	* DESCRIPTION (OS_type): Reset package to Unix-only
+	* DESCRIPTION (OS_type): Reset package to Unix-only as ucrt library
+	is unhappy about 'tzname'
 
 	* man/RApiDatetime-package.Rd: Avoid nags on empty entries
 
